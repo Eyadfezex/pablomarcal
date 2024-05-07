@@ -42,7 +42,7 @@
             </div>
             <div class="w-full bg-white rounded-md mt-5">
               <div
-                class="bg-[#5929be] text-[17px] text-right py-[.5rem] pr-[1rem] leading-none rounded-md load"
+                class="bg-[#5929be] load text-[17px] text-right py-[.5rem] pr-[1rem] leading-none rounded-md load"
                 style="width: 85%"
               >
                 85%
@@ -97,5 +97,19 @@
         </footer>
       </section>
     </main>
+    <style>
+      .load {
+        animation: load 1.5s linear;
+      }
+      @keyframes load {
+        0% {
+          width: 0%;
+        }
+
+        100% {
+          width: 85%;
+        }
+      }
+    </style>
   </body>
 </html>
